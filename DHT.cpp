@@ -23,8 +23,8 @@ bool DHT::read(int pin, int type) {
 
 bool DHT::read_dht11(int pin) {
 	char bit = digitalPinToBitMask(pin);
-    char port = digitalPinToPort(pin);
-    volatile uint8_t *PRT = portInputRegister(port);
+	char port = digitalPinToPort(pin);
+	volatile uint8_t *PRT = portInputRegister(port);
 	
 	pinMode(pin, OUTPUT);
 	digitalWrite(pin, LOW);
