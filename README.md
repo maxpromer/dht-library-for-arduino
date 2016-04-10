@@ -2,10 +2,11 @@
 ไลบารี่สำหรับ DHT11 สำหรับอ่านอุณหภูมิ ความชื้น สามารถอ่านอุณหภูมิออกมาได้ทั้งในรูปขององศาเซลเซียส และองศาฟาเรนไฮ
 
 ## การติดตั้ง
-* เปิดโปรแกรม Arduino IDE ขึ้นมา จากนั้นกดไปที่ File > Preferences 
-* ในช่อง Additional Boards Manager URLs กรอก https://rawgit.com/maxpromer/lambda-library/master/package_lambda_index.json ลงไป แล้วกดปุ่ม OK
-* กดไปที่ Tool > Board > Boards Manager เลื่อนหา LAMBDA Boards กด Install รอจนกว่าจะโหลดเสร็จ จากนั้นปิดหน้าต่างไป
-* เลือกบอร์ด เลือกพอร์ต จากนั้นทดลอง Upload ได้เลย
+* ดาว์โหลดไฟล์ไลบารี่ที่ https://github.com/maxpromer/dht-library-for-arduino/releases/download/1.0/DHTLibrary.zip
+* เปิดโปรแกรม Arduino IDE ขึ้นมา จากนั้นกดไปที่ Sketch > Include Library > Add .ZIP Library...
+* เลือกไฟล์ที่ได้ดาว์โหลดไว้
+* ต่อวงจร โดยให้ขา DATA อยู่ที่ D5
+* กดไปที่ File > Examples > DHTLibrary > DHT11_Demo กด Upload แล้วดูผลการอ่านค่าได้เลย
 
 ## รายการอุปกรณ์ที่ไลบารี่รองรับ
 * DHT11
